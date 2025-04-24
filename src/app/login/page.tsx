@@ -1,15 +1,16 @@
+import { Button } from "@/shared/components/ui/button";
 import { signup } from "./actions";
 import { login } from "./actions";
 
 export default function LoginPage() {
   return (
-    <form>
+    <form className="flex flex-col">
       <label htmlFor="email">Email:</label>
       <input id="email" name="email" type="email" required />
       <label htmlFor="password">Password:</label>
       <input id="password" name="password" type="password" required />
-      <button formAction={login}>Log in</button>
-      <button formAction={signup}>Sign up</button>
+      <Button formAction={login}>Log in</Button>
+      <Button formAction={signup}>Sign up</Button>
     </form>
   );
 }
