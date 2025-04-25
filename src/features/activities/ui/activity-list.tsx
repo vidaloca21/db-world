@@ -1,7 +1,6 @@
 "use client";
 import { Button } from "@/shared/components/ui/button";
 import { useOverlay } from "@toss/use-overlay";
-import Link from "next/link";
 import { ActivityCreate } from "./activity-create";
 import {
   Accordion,
@@ -41,7 +40,8 @@ export function ActivityList() {
         <AccordionItem value="item-3">
           <AccordionTrigger>Is it animated?</AccordionTrigger>
           <AccordionContent>
-            Yes. It's animated by default, but you can disable it if you prefer.
+            Yes. It is animated by default, but you can disable it if you
+            prefer.
           </AccordionContent>
         </AccordionItem>
       </Accordion>

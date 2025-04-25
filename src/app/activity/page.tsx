@@ -1,4 +1,4 @@
-import { ActivityCreate, ActivityList } from "@/features/activities/ui";
+import { ActivityList } from "@/features/activities/ui";
 
 export default function ActivityView() {
   return (

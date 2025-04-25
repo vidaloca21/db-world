@@ -2,8 +2,6 @@
 import {
   Table,
   TableBody,
-  TableCaption,
-  TableCell,
   TableHead,
   TableHeader,
   TableRow,
@@ -71,7 +69,7 @@ const STUDENT_LIST: Student[] = [
 ];
 
 export function StudentsList() {
-  const [students, setStudents] = useState(STUDENT_LIST);
+  const [students] = useState(STUDENT_LIST);
   return (
     <Table>
       <TableHeader>

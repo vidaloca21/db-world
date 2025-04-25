@@ -1,10 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
 
 export function GlobalNavbar() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // 예시용
+  // const [isLoggedIn, setIsLoggedIn] = useState(false); // 예시용
 
   return (
     <header className="sticky top-0 z-50 w-full bg-[#c9e7db] backdrop-blur border-b border-gray-200">
