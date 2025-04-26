@@ -22,7 +22,7 @@ export function GlobalNavbar() {
             </span>
           </Link>
 
-          <a href="#" className="hover:text-primary transition-colors">
+          <a href="/student" className="hover:text-primary transition-colors">
             학생상세
           </a>
           <Link href="/activity">

@@ -2,6 +2,7 @@
 import { Button } from "@/shared/components/ui/button";
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogHeader,
   DialogTitle,
@@ -21,6 +22,7 @@ export function ActivityCreate({ isOpen, close }: OverlayProps) {
         <div className="flex flex-col w-full">
           <DialogHeader>
             <DialogTitle>새 활동 추가</DialogTitle>
+            <DialogClose onClick={close} />
           </DialogHeader>
           <div className="mt-4">
             <h3 className="py-2">활동 내용</h3>
