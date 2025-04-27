@@ -1,4 +1,4 @@
-import { StudentDetail, StudentsList } from "@/features/students/ui";
+import { StudentsList } from "@/features/students/ui";
 import { Button } from "@/shared/components/ui/button";
 import Image from "next/image";
 
@@ -11,7 +11,6 @@ export default function Home() {
       <Button className="bg-(--custom-pink) w-30 h-10">색상표</Button>
       <Button className="bg-(--custom-black) w-30 h-10">색상표</Button>
       <StudentsList />
-      <StudentDetail />
     </div>
   );
 }
