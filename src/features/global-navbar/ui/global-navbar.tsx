@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import { Button } from "@/shared/components/ui/button";
 import {
@@ -11,11 +10,25 @@ import {
 } from "@/shared/components/ui/sheet";
 import { Menu } from "lucide-react";
 import Link from "next/link";
+import { useOverlay } from "@toss/use-overlay";
+import { AlertPopup } from "@/features/popup/alert/alert-popup";
 
 export function GlobalNavbar() {
   const [open, setOpen] = useState(false);
 
   const handleClose = () => setOpen(false);
+
+  const overlay = useOverlay();
+  const showAlert = () => {
+    return overlay.open(({ isOpen, close }) => (
+      <AlertPopup
+        isOpen={isOpen}
+        close={close}
+        title="개발 중 입니다"
+        cancelText="닫기"
+      />
+    ));
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full bg-[#c9e7db] backdrop-blur border-b border-gray-200">
@@ -46,13 +59,25 @@ export function GlobalNavbar() {
           >
             활동관리
           </Link>
-          <Link href="#" className="hover:text-primary transition-colors">
+          <Link
+            href="#"
+            onClick={showAlert}
+            className="hover:text-primary transition-colors"
+          >
             뱃지
           </Link>
-          <Link href="#" className="hover:text-primary transition-colors">
+          <Link
+            href="#"
+            onClick={showAlert}
+            className="hover:text-primary transition-colors"
+          >
             상점
           </Link>
-          <Link href="#" className="hover:text-primary transition-colors">
+          <Link
+            href="#"
+            onClick={showAlert}
+            className="hover:text-primary transition-colors"
+          >
             주식
           </Link>
         </nav>
