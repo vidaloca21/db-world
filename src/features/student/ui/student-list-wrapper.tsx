@@ -2,10 +2,11 @@
 import { Button } from "@/shared/components/ui/button";
 import { Input } from "@/shared/components/ui/input";
 
+type ts = { id: string; name: string };
 interface ListWrapperProps {
-  list: any[];
-  selectedItem: any;
-  setSelectedItem(item: any): void;
+  list: ts[];
+  selectedItem: ts;
+  setSelectedItem(item: ts): void;
 }
 
 export function StudentListWrapper({

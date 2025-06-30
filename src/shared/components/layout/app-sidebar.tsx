@@ -10,7 +10,11 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/shared/components/ui/sidebar";
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react";
+import {
+  Calendar,
+  Home,
+  // , Inbox, Search, Settings
+} from "lucide-react";
 import Link from "next/link";
 
 const items = [

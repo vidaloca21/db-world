@@ -1,9 +1,6 @@
 "use client";
 import { AppSidebar } from "@/shared/components/layout";
-import {
-  SidebarProvider,
-  SidebarTrigger,
-} from "@/shared/components/ui/sidebar";
+import { SidebarProvider } from "@/shared/components/ui/sidebar";
 import { MantineProvider } from "@mantine/core";
 import { OverlayProvider } from "@toss/use-overlay";
 import "@mantine/core/styles.css";
