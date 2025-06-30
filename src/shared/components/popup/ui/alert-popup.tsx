@@ -8,8 +8,8 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/shared/components/ui/alert-dialog";
-import { PopupCommon } from "@/shared/types";
 import { AlertDialog } from "@radix-ui/react-alert-dialog";
+import { PopupCommon } from "../model/types";
 
 interface AlertPopupProps extends PopupCommon {
   title: string;
