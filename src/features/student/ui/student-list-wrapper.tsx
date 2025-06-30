@@ -2,7 +2,7 @@
 import { Button } from "@/shared/components/ui/button";
 import { Input } from "@/shared/components/ui/input";
 
-type ts = { id: string; name: string };
+type ts = { id: number; name: string };
 interface ListWrapperProps {
   list: ts[];
   selectedItem: ts;
